@@ -53,10 +53,11 @@ const About = ({ id }) => {
             
             <div className="space-y-4 mb-8" style={{ color: currentColors.textSecondary }}>
               <p>
-                I'm a Computer Engineering student with hands-on experience in building scalable web applications using Java, Spring Boot, and React.js. My expertise extends to crafting cross-platform mobile applications with Flutter, Dart, and Firebase.
+
+               I&rsquo;m a Computer Engineering student with hands-on experience in building scalable web applications using Java, Spring Boot, and React.js. My expertise extends to crafting cross-platform mobile applications with Flutter, Dart, and Firebase.
               </p>
               <p>
-                I thrive on solving complex problems and possess a strong dedication to clean code, robust system design, and seamless user experiences. I'm proficient in RESTful APIs, JWT authentication, and real-time communication with WebSockets.
+                I thrive on solving complex problems and possess a strong dedication to clean code, robust system design, and seamless user experiences. I&rsquo;m proficient in RESTful APIs, JWT authentication, and real-time communication with WebSockets.
               </p>
               <p>
                 Adept at deploying production-grade applications using Docker and CI/CD pipelines, I am always eager to learn and integrate emerging technologies. I value strong communication and collaborative teamwork.

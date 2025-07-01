@@ -124,7 +124,7 @@ const Hero = ({ id }) => {
                 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight"
                 style={{ color: currentColors.text }}
               >
-                Hi, I'm <span 
+                Hi, I&rsquo;m <span 
                   className="inline-block"
                   style={{ 
                     background: `linear-gradient(120deg, ${currentColors.primary}, ${currentColors.secondary})`,

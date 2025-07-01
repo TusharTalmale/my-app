@@ -5,7 +5,7 @@ import React, { useContext, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ThemeContext } from '../context/ThemeContext';
 import SectionTitle from './SectionTitle';
-import { FiMail, FiPhone, FiLinkedin, FiGithub, FiCode } from 'react-icons/fi';
+import { FiMail, FiPhone, FiLinkedin, FiGithub } from 'react-icons/fi';
 import { SiLeetcode } from 'react-icons/si';
 import { FaPaperPlane } from 'react-icons/fa';
 import { BsChatSquareQuote } from 'react-icons/bs';
@@ -60,9 +60,8 @@ const Contact = ({ id }) => {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
-      setSubmitStatus('error');
-    } finally {
+    } 
+    finally {
       setIsSubmitting(false);
       setTimeout(() => setSubmitStatus(null), 5000);
     }
@@ -260,7 +259,7 @@ const Contact = ({ id }) => {
                     border: `1px solid ${currentColors.inputBorder}`,
                     '--tw-ring-color': currentColors.primary + '80'
                   }}
-                  placeholder="Hello Tushar, I'd like to discuss..."
+                  placeholder="Hello Tushar, I like to discuss..."
                   required
                 ></textarea>
               </div>
