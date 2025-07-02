@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tushar Talmale - Portfolio README</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 2rem;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #007acc;
-    }
-    code, pre {
-      background-color: #eee;
-      padding: 0.2em 0.4em;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    img {
-      max-width: 100%;
-      margin: 1rem 0;
-    }
-    ul {
-      margin-left: 1.5rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-  </style>
-</head>
+
 <body>
 
   <h1>Tushar Talmale - Personal Portfolio Website</h1>
@@ -60,14 +20,11 @@
       <li><strong>Custom Cursor:</strong> Interactive experience enhancement.</li>
     </ul>
   </section>
-
+  ### Demo Video
+  
+[![Demo Video](https://img.youtube.com/vi/jHIN1UO-K-U/0.jpg)](https://www.youtube.com/watch?v=jHIN1UO-K-U)
   <section>
-    <h2>🖼️ Screenshots</h2>
-    <p><strong>Light Mode</strong></p>
-    <img src="screenshots/light-mode.png" alt="Light Mode Screenshot">
-
-    <p><strong>Dark Mode</strong></p>
-    <img src="screenshots/dark-mode.png" alt="Dark Mode Screenshot">
+    
   </section>
 
   <section>
@@ -113,8 +70,8 @@ yarn dev</code></pre>
 
   <section>
     <h2>🌐 Live Demo</h2>
-    <p>View the live version: <a href="https://your-portfolio-live-url.com" target="_blank">https://your-portfolio-live-url.com</a><br>
-    <em>(Replace with actual deployed link)</em></p>
+    <p>View the live version: <a href="https://my-portfolio-nextjs-wheat.vercel.app/" target="_blank">https://my-portfolio-nextjs-wheat.vercel.app/</a><br>
+    <em>https://my-portfolio-nextjs-wheat.vercel.app/</em></p>
   </section>
 
   <section>
