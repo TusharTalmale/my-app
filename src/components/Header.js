@@ -77,7 +77,12 @@ const Header = () => {
                   background: `linear-gradient(135deg, ${currentColors.primary}, ${currentColors.secondary})`,
                 }}
               >
-                <span className="font-bold">TT</span>
+                {/* <span className="font-bold">TT</span> */}
+                  <img 
+                src="two.png" 
+                alt="Tushar Talmale"
+                className="w-full h-full object-cover"
+              />
               </motion.div>
               <motion.span 
                 className="text-xl font-bold hidden sm:block"

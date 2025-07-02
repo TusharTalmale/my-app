@@ -12,7 +12,7 @@ const About = ({ id }) => {
     { value: "200+", label: "LeetCode Problems Solved" },
     { value: "10+", label: "Projects Completed" },
     { value: "2", label: "Internships" },
-    { value: "5+", label: "Years of Experience" }, // Adjusted based on expected graduation 2025 and internships
+    { value: "3+", label: "Month of Experience" }, // Adjusted based on expected graduation 2025 and internships
   ];
 
   return (
@@ -32,7 +32,7 @@ const About = ({ id }) => {
           >
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl relative z-10">
               <img 
-                src="https://placehold.co/400x400/E0E0E0/333333?text=Tushar+Talmale" 
+                src="two.png" 
                 alt="Tushar Talmale"
                 className="w-full h-full object-cover"
               />

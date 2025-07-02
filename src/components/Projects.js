@@ -12,14 +12,77 @@ const Projects = ({ id }) => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [filter, setFilter] = useState('all');
 
+
   const allProjects = [
-    { title: "Land Auction Platform", description: "Built a real-time land auction platform with WebSocket-based bidding and integrated Leaflet.js maps for sellers to mark plots and visualize boundaries. Implemented secure authentication and real-time chat.", technologies: ["Spring Boot", "React.js", "WebSockets", "Leaflet.js", "JWT", "TailwindCSS", "MySQL"], github: "https://github.com/TusharTalmale/Land-Auction-Platform", liveDemo: "#", type: "web", pattern: 'diagonal-stripes', bgColor: currentColors.tertiary, borderColor: currentColors.primary },
-    { title: "Threads Clone Social Media App", description: "Developed a real-time social media app with features like posting threads (text, images, videos), liking, replying, and user authentication. Utilized a modern tech stack for scalability and performance.", technologies: ["Next.js", "React.js", "TypeScript", "TailwindCSS", "MongoDB", "Mongoose", "Clerk Authentication"], github: "https://github.com/TusharTalmale/threads-clone-nextjs", liveDemo: "#", type: "web", pattern: 'dots', bgColor: currentColors.accent, borderColor: currentColors.secondary },
-    { title: "AI Recipe Generator", description: "An intelligent recipe generation application leveraging the Gemini API to transform ingredients into diverse culinary creations. Features include real-time recipe suggestions, dietary filters, and user-friendly interface.", technologies: ["React.js", "Spring Boot", "Gemini API", "Docker", "Jenkins", "MySQL", "TailwindCSS"], github: "https://github.com/TusharTalmale/AI-Recipe-Generator", liveDemo: "#", type: "web", pattern: 'grid', bgColor: currentColors.secondary, borderColor: currentColors.tertiary },
-    { title: "Portfolio Website (This Site!)", description: "My personal portfolio website showcasing my skills, projects, and experience. Built with a focus on modern design, smooth animations, and responsiveness.", technologies: ["Next.js", "React.js", "Framer Motion", "TailwindCSS"], github: "https://github.com/TusharTalmale/my-portfolio-nextjs", liveDemo: "#", type: "web", pattern: 'wavy', bgColor: currentColors.primary, borderColor: currentColors.accent },
-    { title: "Flutter Chat App", description: "A real-time chat application built with Flutter and Firebase. Features include user authentication, private messaging, group chats, and real-time message updates.", technologies: ["Flutter", "Dart", "Firebase (Auth, Firestore)", "Provider"], github: "https://github.com/TusharTalmale/flutter_chat_app", liveDemo: "#", type: "mobile", pattern: 'diagonal-stripes', bgColor: currentColors.accent, borderColor: currentColors.primary },
-    { title: "E-commerce Mobile App", description: "A cross-platform e-commerce mobile application developed using Flutter. Features include product listings, shopping cart, order management, and user profiles.", technologies: ["Flutter", "Dart", "Firebase (Auth, Firestore, Storage)", "GetX"], github: "https://github.com/TusharTalmale/ecommerce_app_flutter", liveDemo: "#", type: "mobile", pattern: 'dots', bgColor: currentColors.primary, borderColor: currentColors.tertiary },
-  ];
+    { 
+        title: "Threads Clone – Social Media App", 
+        description: "Developed a real-time social media app with features like posting threads (text, images, videos), liking, commenting, and searching. Implemented real-time updates using Firebase Firestore and user authentication.", 
+        technologies: ["Flutter", "Dart", "Firebase", "GetX", "Firebase Firestore", "Firebase Storage"], 
+        github: "https://github.com/TusharTalmale/threads-clone-flutter", 
+        liveDemo: "#", 
+        type: "mobile", 
+        pattern: 'dots', 
+        bgColor: currentColors.accent, 
+        borderColor: currentColors.secondary 
+    },
+    { 
+        title: "Real-Time Chat App", 
+        description: "Built a real-time messaging app with text and image sharing using Firebase Firestore. Implemented user authentication and chat history persistence with clean UI including message bubbles and timestamps.", 
+        technologies: ["Flutter", "Dart", "Firebase", "GetX", "Firebase Auth", "Firebase Storage"], 
+        github: "https://github.com/TusharTalmale/chat-App-flutter", 
+        liveDemo: "#", 
+        type: "mobile", 
+        pattern: 'diagonal-stripes', 
+        bgColor: currentColors.tertiary, 
+        borderColor: currentColors.primary 
+    },
+    { 
+        title: "AI Recipe Generator", 
+        description: "Developed an AI Recipe Generator application using React and Spring Boot. Integrated Gemini API with 100% accuracy for ingredient-to-recipe transformation. Containerized using Docker with 99.8% uptime.", 
+        technologies: ["React.js", "Spring Boot", "Gemini API", "Docker", "Jenkins", "MySQL"], 
+        github: "https://github.com/TusharTalmale/AI-Recipe-Generator", 
+        liveDemo: "#", 
+        type: "web", 
+        pattern: 'grid', 
+        bgColor: currentColors.secondary, 
+        borderColor: currentColors.tertiary 
+    },
+    { 
+        title: "Land Auction Platform", 
+        description: "Built real-time land auction platform with WebSocket-based bidding. Integrated Leaflet.js maps for sellers to mark plots and visualize boundaries. Implemented secure authentication using Spring Security and JWT.", 
+        technologies: ["Spring Boot", "React.js", "WebSockets", "Leaflet.js", "JWT", "TailwindCSS", "MySQL"], 
+        github: "https://github.com/TusharTalmale/Land-Auction", 
+        liveDemo: "#", 
+        type: "web", 
+        pattern: 'wavy', 
+        bgColor: currentColors.primary, 
+        borderColor: currentColors.accent 
+    },
+    { 
+        title: "Weather Forecasting App", 
+        description: "Created a weather app that fetches real-time data using OpenWeather API. Added location-based weather updates and search feature for cities worldwide with interactive UI and weather animations.", 
+        technologies: ["Flutter", "Dart", "OpenWeather API", "HTTP"], 
+        github: "https://github.com/TusharTalmale/Weather-Flutter-app", 
+        liveDemo: "#", 
+        type: "mobile", 
+        pattern: 'diagonal-stripes', 
+        bgColor: currentColors.accent, 
+        borderColor: currentColors.primary 
+    },
+    { 
+        title: "Smart Email Writer – Chrome Extension", 
+        description: "AI-powered Chrome extension that generates contextual email drafts. Integrated directly into Gmail UI for real-time suggestions with fast response times using Spring Boot async processing.", 
+        technologies: ["React.js", "Spring Boot", "Gemini API", "Docker", "Chrome Extension API"], 
+        github: "https://github.com/TusharTalmale/Smart-Email-Reply", 
+        liveDemo: "emailbuddyai.netlify.app/", 
+        type: "web", 
+        pattern: 'dots', 
+        bgColor: currentColors.primary, 
+        borderColor: currentColors.tertiary 
+    },
+        { title: "Portfolio Website (This Site!)", description: "My personal portfolio website showcasing my skills, projects, and experience. Built with a focus on modern design, smooth animations, and responsiveness.", technologies: ["Next.js", "React.js", "Framer Motion", "TailwindCSS"], github: "https://github.com/TusharTalmale/my-portfolio-nextjs", liveDemo: "#", type: "web", pattern: 'wavy', bgColor: currentColors.primary, borderColor: currentColors.accent },
+
+];
 
   const filteredProjects = filter === 'all' ? allProjects : allProjects.filter(p => p.type === filter);
 
